@@ -103,7 +103,7 @@
 	["auguraud ", " дырокол"],
 	["avaja ", " открывашка"],
 	["avamine ", " открытие"],
- 	["edel ", " юго", "запад"],
+ 	["edel ", " юго-запад"],
 	["edu ", " успех, удача"],
  	["eeldus ", " условие, предпосылка, презумпция, задаток "],
 	["eelis ", " преимущество, превосходство"],
@@ -1314,89 +1314,8 @@
             ["otsa", "торцевой+, на, о, об, к"]
         ];
 
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Викторина: Слова</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-        .question {
-            margin: 20px;
-            font-size: 24px;
-        }
-        .options {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        button {
-            padding: 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .result {
-            margin-top: 20px;
-            font-size: 20px;
-        }
-        .language-selector {
-            margin: 20px;
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Викторина: Слова</h1>
-
-    <!-- Селектор направления языка -->
-    <div class="language-selector">
-        <label for="language">Выберите направление:</label>
-        <select id="language" onchange="resetQuiz()">
-            <option value="etToRu">Эстонский → Русский</option>
-            <option value="ruToEt">Русский → Эстонский</option>
-        </select>
-    </div>
-
-    <div class="question"></div>
-    <div class="options"></div>
-    <div class="result"></div>
-    <button onclick="nextQuestion()">Следующий вопрос</button>
-
-    <script>
-        // Массив данных
-        const words = [
-            ["allpool", "ниже, внизу"],
-            ["asemel", "вместо, взамен"],
-            ["eel", "перед, накануне"],
-            ["eesotsas", "впереди, во главе"],
-            ["heaks", "на благо, ради"],
-            ["hoolimata", "вопреки, несмотря на"],
-            ["hulgas", "среди, в кругу, внутри"],
-            ["jaoks", "для кого-чего, следом за кем/чем"],
-            ["järel", "вслед за, после, через"],
-            ["järgi", "согласно, в соответствии с"],
-            ["kaudu", "через, посредством, путем"],
-            ["keset", "посреди"],
-            ["kohal", "о ком, о чем (узнать о чем-то)"],
-            ["kohaselt", "в соответствии с, согласно"],
-            ["kohta", "об, насчет, (узнать о чем-то)"],
-            ["korral", "в случае, при"],
-            ["kulul", "за счет, на счет"],
-            ["külge", "к стороне, при-, под-, к"],
-            ["meelest", "по мнению (по моему)"],
-            ["mööda", "вдоль, по, мимо"],
-            ["nimel", "от имени, именем"],
-            ["otsa", "торцевой+, на, о, об, к"]
-        ];
-
-        // Переменные для текущего состояния
-        let currentQuestion = null;
+     // Переменные для текущего состояния
+     let currentQuestion = null;
         let options = [];
         let correctAnswer = "";
         let languageDirection = "etToRu"; // Направление: с эстонского на русский по умолчанию
@@ -1470,4 +1389,3 @@
     </script>
 </body>
 </html>
-
